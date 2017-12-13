@@ -172,9 +172,9 @@ for tweet in ppTestData:
 # Step  : GEt the majority vote and print the sentiment 
 
 if NBResultLabels.count('positive')>NBResultLabels.count('negative'):
-    print(" Positive Sentiment")
+    print(" Positive Sentiment. Positivity percentage: "+str(100*NBResultLabels.count('positive')/len(NBResultLabels))+"%")
 else: 
-    print("Negative Sentiment")
+    print("Negative Sentiment. Negativity percentage: "+str(100*NBResultLabels.count('negative')/len(NBResultLabels))+"%")
     
     
     
